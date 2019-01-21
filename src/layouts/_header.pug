@@ -1,0 +1,505 @@
+.beboss-head
+    .beboss-head__left
+        .beboss-head__burger.js-beboss-burger
+            span
+        a(href="/html/main-page-2018/").beboss-head__logo-container
+            .beboss-head__logo-icon
+                i.icon-logo-3
+            .beboss-head__logo-text
+                | Бибосс
+        .beboss-head__btn-open.beboss-head__btn-open_city-selection.js-bh-bo
+            | Петропавловск-Камчатский
+            .beboss-head__icon
+                i.icon-24_black_small_arrow_down
+            .beboss-head__drop-down-container
+                .beboss-head__drop-down-block.beboss-head__drop-down-block_city-selection.js-bh-ddb
+                    .city-selection
+                        .city-selection__form-group
+                            .city-selection__form-item.js-cs-select
+                                .bk-select-container
+                                    .bk-select-container__arrow
+                                    select.bk-select.js-bk-select
+                                        option
+                                            | Россия
+                                        option
+                                            | Украина
+                                        option
+                                            | Белоруссия
+                                        option
+                                            | Казахстан
+                            .city-selection__form-item
+                                input(type="text" placeholder="Поиск").bk-input-text.bk-input-text_full
+                        .city-selection__list-container.js-bh-ddb-scroll-root.baron.baron__root.baron__clipper._macosx
+                            .city-selection__list.js-bh-ddb-scroller.baron__scroller
+                                a(href="#").city-selection__item
+                                    | Вся Россия
+                                a(href="#").city-selection__item.city-selection__item_active
+                                    | Москва
+                                a(href="#").city-selection__item
+                                    | Санкт-Петербург
+                                .city-selection__separator
+                                a(href="#").city-selection__item
+                                    | Астрахань
+                                a(href="#").city-selection__item
+                                    | Барнаул
+                                a(href="#").city-selection__item
+                                    | Санкт-Петербург
+                                a(href="#").city-selection__item
+                                    | Великий Новгород
+                                a(href="#").city-selection__item
+                                    | Владивосток
+                                a(href="#").city-selection__item
+                                    | Грозный
+                                a(href="#").city-selection__item
+                                    | Казань
+                                a(href="#").city-selection__item
+                                    | Нижний Новгород
+                                a(href="#").city-selection__item
+                                    | Омск
+                                a(href="#").city-selection__item
+                                    | Саратов
+                            .baron__track
+                                .baron__free
+                                    .js-bh-ddb-scrollbar.baron__bar
+        .beboss-head__city-tooltip.hide
+            .ntf-item
+                .ntf-item__text-container
+                    .ntf-item__title
+                        | Петропавловск-Камчатский
+                    .ntf-item__text
+                        | Вы находитесь здесь?
+                .ntf-item__control-panel
+                    .ntf-item__control
+                        a(href="#").button.green.paint.small
+                            | Да
+                    .ntf-item__control
+                        button.button.green.full.small
+                            | Выбрать другой город
+                .ntf-item__close.icon-24_black_close
+    .beboss-head__right
+        //.beboss-head__btn-add.beboss-head__btn-add_q
+        //    .button.big.blue.paint.full
+        //        | + Вопрос
+        .beboss-head__btn-add.beboss-head__btn-add_a
+            .button.big.green.paint.full
+                | + Объявление
+        .beboss-head__btn-open.js-bh-bo
+            .beboss-head__icon.icon-24_grey_message
+            .beboss-head__icon.beboss-head__icon_new.icon-24_grey_message_new
+            .beboss-head__drop-down-container
+                .beboss-head__drop-down-block.beboss-head__drop-down-block_mes.js-bh-ddb.js-bh-ddb-scroll-root.baron.baron__root.baron__clipper._macosx
+                    .beboss-head__drop-down-scroller-block.mes-list.js-bh-ddb-scroller.baron__scroller
+                        a(href="#").mes-list__item
+                            .mes-list__item-img
+                                img(src="/img/photo.png")
+                            .mes-list__item-text-container
+                                .mes-list__item-name
+                                    | Александр Константинович
+                                .mes-list__item-text.mes-list__item-text_not-viewed
+                                    | Теперь вы общаетесь и в Messenger
+                            .mes-list__item-meta-container
+                                .mes-list__item-time
+                                    | 15:30
+                                .mes-list__item-qt
+                                    | +4
+                        a(href="#").mes-list__item
+                            .mes-list__item-img
+                                img(src="/img/photo.png")
+                            .mes-list__item-text-container
+                                .mes-list__item-name
+                                    | Андрей Обухов
+                                .mes-list__item-text.mes-list__item-text_viewed
+                                    | пока вроде нет
+                            .mes-list__item-meta-container
+                                .mes-list__item-time
+                                    | 2 сент
+                        a(href="#").mes-list__item
+                            .mes-list__item-img
+                                img(src="/img/photo.png")
+                            .mes-list__item-text-container
+                                .mes-list__item-name
+                                    | Валерия Петрова
+                                .mes-list__item-text.mes-list__item-text_sent
+                                    | Привет:)
+                            .mes-list__item-meta-container
+                                .mes-list__item-time
+                                    | 16 авг
+                        a(href="#").mes-list__item
+                            .mes-list__item-img
+                                img(src="/img/photo.png")
+                            .mes-list__item-text-container
+                                .mes-list__item-name
+                                    | Дмитрий Пороховницкиевский
+                                .mes-list__item-text.mes-list__item-text_read
+                                    | дада, разобрался ужеразобрался ужеразобрался ужеразобрался уже
+                            .mes-list__item-meta-container
+                                .mes-list__item-time
+                                    | 1 апр
+                        a(href="#").mes-list__item
+                            .mes-list__item-img
+                                img(src="/img/photo.png")
+                            .mes-list__item-text-container
+                                .mes-list__item-name
+                                    | Дмитрий Пороховницкиевскийоховницкиевский
+                                .mes-list__item-text.mes-list__item-text_received
+                                    | тест тост например
+                            .mes-list__item-meta-container
+                                .mes-list__item-time
+                                    | 13 янв
+                        .mes-list__separator
+                        a(href="#").mes-list__item
+                            .font-normal-r
+                                | Все сообщения
+                    .bh-empty-ddb.hide
+                        .bh-empty-ddb__img
+                            img(src="/img/beboss-head-and-menu/mes.png")
+                        .bh-empty-ddb__text
+                            | У вас пока нет сообщений
+                    .bk-preload-wrap.hide
+                        .bk-preload__body
+                            .bk-preload__content.bk-preload__content_front
+                                .bk-preload__item.border.bk-preload__item_orange
+                                .bk-preload__item.border.bk-preload__item_green
+                                .bk-preload__item.border.bk-preload__item_yellow
+                                .bk-preload__item.border.bk-preload__item_blue
+                            .bk-preload__content.bk-preload__content_right
+                                .bk-preload__item.border
+                                .bk-preload__item.border
+                                .bk-preload__item.border
+                                .bk-preload__item.border
+                    .baron__track
+                        .baron__free
+                            .js-bh-ddb-scrollbar.baron__bar
+        .beboss-head__btn-open.beboss-head__btn-open_new.js-bh-bo
+            .beboss-head__icon.icon-24_grey_notification
+            .beboss-head__icon.beboss-head__icon_new.icon-24_grey_notification_new
+            .beboss-head__drop-down-container
+                .beboss-head__drop-down-block.beboss-head__drop-down-block_ntf.js-bh-ddb.js-bh-ddb-scroll-root.baron.baron__root.baron__clipper._macosx
+                    //.beboss-head__drop-down-scroller-block.ntf-list.js-bh-ddb-scroller.baron__scroller
+                        .ntf-list__container
+                            .ntf-list__item
+                                .ntf-item
+                                    .ntf-item__img
+                                        img(src="/img/beboss-head-and-menu/example/ntf-1.png")
+                                    .ntf-item__title
+                                        | Новое событие BOSSCAMP
+                                    .ntf-item__text
+                                        | Мы взяли «среднее по больнице», отбросили трэш и банальности, а на выходе получили ТОП-10 бизнес-идей со стартовым капиталом не более 100 000 рублей.
+                                    .ntf-item__control-panel
+                                        .ntf-item__control.ntf-item__control_short
+                                            a(href="#").button.green.paint.full.small
+                                                | Подробнее
+                                        .ntf-item__control.ntf-item__control_short
+                                            button.button.grey.full.color-black.small
+                                                | Скрыть
+                            .ntf-list__item
+                                .ntf-item
+                                    .ntf-item__img
+                                        img(src="/img/beboss-head-and-menu/example/ntf-2.png")
+                                    .ntf-item__mob-title
+                                        | Профиль не активирован
+                                    .ntf-item__title
+                                        | Профиль не активирован
+                                    .ntf-item__text
+                                        | Подтвердите ваш почтовый ящик чтобы активировать ваш профиль.
+                                    .ntf-item__control-panel
+                                        .ntf-item__control
+                                            a(href="#").button.green.paint.full.small
+                                                | Подробнее
+                                        .ntf-item__control
+                                            button.button.grey.full.color-black.small
+                                                | Скрыть
+                            .ntf-list__item
+                                .ntf-item
+                                    .ntf-item__img
+                                        img(src="/img/beboss-head-and-menu/example/ntf-3.png")
+                                    .ntf-item__mob-title
+                                        | Профиль не активирован
+                                    .ntf-item__title
+                                        | Профиль не активирован
+                                    .ntf-item__text
+                                        | Подтвердите ваш почтовый ящик чтобы активировать ваш профиль.
+                                    .ntf-item__control-panel
+                                        .ntf-item__control
+                                            a(href="#").button.green.paint.full.small
+                                                | Подробнее
+                                        .ntf-item__control
+                                            button.button.grey.full.color-black.small
+                                                | Скрыть
+                            .ntf-list__item
+                                .ntf-item
+                                    .ntf-item__img
+                                        img(src="/img/beboss-head-and-menu/example/ntf-3.png")
+                                    .ntf-item__mob-title
+                                        | Одобрено объявление “Fast&Shine”
+                                    .ntf-item__title
+                                        | Одобрено объявление “Fast&Shine”
+                                    .ntf-item__text
+                                        | Вы можете посмотреть его и рассказать о нем своим друзьям.
+                                    .ntf-item__control-panel
+                                        .ntf-item__control.ntf-item__control_short
+                                            a(href="#").button.green.paint.full.small
+                                                | Подробнее
+                                        .ntf-item__control.ntf-item__control_short
+                                            button.button.grey.full.color-black.small
+                                                | Скрыть
+
+                            .ntf-list__item
+                                .ntf-item
+                                    .ntf-item__img
+                                        img(src="/img/beboss-head-and-menu/example/ntf-3.png")
+                                    .ntf-item__mob-title
+                                        | Профиль не активирован
+                                    .ntf-item__title
+                                        | Профиль не активирован
+                                    .ntf-item__text
+                                        | Подтвердите ваш почтовый ящик чтобы активировать ваш профиль.
+                                    .ntf-item__control-panel
+                                        .ntf-item__control
+                                            a(href="#").button.green.paint.full.small
+                                                | Подробнее
+                                        .ntf-item__control
+                                            button.button.grey.full.color-black.small
+                                                | Скрыть
+                            .ntf-list__item
+                                .ntf-item
+                                    .ntf-item__img
+                                        img(src="/img/beboss-head-and-menu/example/ntf-3.png")
+                                    .ntf-item__mob-title
+                                        | Одобрено объявление “Fast&Shine”
+                                    .ntf-item__title
+                                        | Одобрено объявление “Fast&Shine”
+                                    .ntf-item__text
+                                        | Вы можете посмотреть его и рассказать о нем своим друзьям.
+                                    .ntf-item__control-panel
+                                        .ntf-item__control.ntf-item__control_short
+                                            a(href="#").button.green.paint.full.small
+                                                | Подробнее
+                                        .ntf-item__control.ntf-item__control_short
+                                            button.button.grey.full.color-black.small
+                                                | Скрыть
+
+                    .bh-empty-ddb
+                        .bh-empty-ddb__img
+                            img(src="/img/beboss-head-and-menu/ntf.png")
+                        .bh-empty-ddb__text
+                            | Уведомлений пока нет
+                    .bk-preload-wrap.hide
+                        .bk-preload__body
+                            .bk-preload__content.bk-preload__content_front
+                                .bk-preload__item.border.bk-preload__item_orange
+                                .bk-preload__item.border.bk-preload__item_green
+                                .bk-preload__item.border.bk-preload__item_yellow
+                                .bk-preload__item.border.bk-preload__item_blue
+                            .bk-preload__content.bk-preload__content_right
+                                .bk-preload__item.border
+                                .bk-preload__item.border
+                                .bk-preload__item.border
+                                .bk-preload__item.border
+                    .baron__track
+                        .baron__free
+                            .js-bh-ddb-scrollbar.baron__bar
+        //.beboss-head__btn-open
+            .beboss-head__icon.icon-24_grey_roul
+        //.beboss-head__btn-open
+            .beboss-head__icon.icon-24_grey_vip
+        .beboss-head__btn-open.beboss-head__btn-open_vip
+            a(href="#")
+                .beboss-head__vip-switch
+                    span
+                        | VIP
+        .beboss-head__btn-open.js-bh-bo
+            .beboss-head__userpic
+                img(src="/img/photo.png")
+            .beboss-head__battery
+                .battery.battery_head
+                    .battery__indicator-container
+                        .battery__indicator.battery__indicator_paint
+                        .battery__indicator.battery__indicator_paint
+                        .battery__indicator
+                        .battery__indicator
+                        .battery__indicator
+                //.battery.battery_head.battery_vip
+                    .battery__indicator-container
+                        .battery__bg
+                        .battery__paint(style="width: 60%;")
+            .beboss-head__drop-down-container
+                .beboss-head__drop-down-block.beboss-head__drop-down-block_menu.js-bh-ddb.js-bh-ddb-scroll-root.baron.baron__root.baron__clipper._macosx
+                    .beboss-menu.beboss-head__drop-down-scroller-block.js-bh-ddb-scroller.baron__scroller
+                        a(href="#").beboss-menu__item
+                            .beboss-menu__item-img
+                                img(src="/img/photo.png")
+                            .beboss-menu__item-text
+                                | Константин Константинович Константинов
+                        a(href="#").beboss-menu__item
+                            .bm-profile
+                                .bm-profile__battery
+                                    .bm-profile__battery-icon
+                                        i.icon-24_black_lightning.opacity02
+                                    .bm-profile__battery-qt
+                                        | 2/5
+                                    .bm-profile__battery-container
+                                        .battery.battery_menu
+                                            .battery__indicator-container
+                                                .battery__indicator.battery__indicator_paint
+                                                .battery__indicator.battery__indicator_paint
+                                                .battery__indicator
+                                                .battery__indicator
+                                                .battery__indicator
+                        a(href="#").beboss-menu__item
+                            .bm-profile
+                                .bm-profile__battery.bm-profile__battery_vip
+                                    .bm-profile__battery-icon
+                                        i.icon-24_orange_vip
+                                    .bm-profile__battery-qt
+                                        | VIP активен
+                                    .bm-profile__battery-text
+                                        | Ещё 8500 дней
+                        a(href="#").beboss-menu__item
+                            .beboss-menu__item-icon
+                                i.icon-24_black_balance
+                            .beboss-menu__item-text
+                                | Баланс: 850 000 ₽
+                        .beboss-menu__separator
+                        a(href="#").beboss-menu__item
+                            .beboss-menu__item-icon
+                                i.icon-24_black_desktop
+                            .beboss-menu__item-text
+                                | Рабочий стол
+                        a(href="#").beboss-menu__item
+                            .beboss-menu__item-icon
+                                i.icon-24_black_feed
+                            .beboss-menu__item-text
+                                | Лента новостей
+                        a(href="#").beboss-menu__item
+                            .beboss-menu__item-icon
+                                i.icon-24_black_blog
+                            .beboss-menu__item-text
+                                | Написать статью
+                        a(href="#").beboss-menu__item
+                            .beboss-menu__item-icon
+                                i.icon-24_black_obj
+                            .beboss-menu__item-text
+                                | Объявления
+                                span.beboss-menu__item-qt
+                                    | 10
+                        a(href="#").beboss-menu__item
+                            .beboss-menu__item-icon
+                                i.icon-24_black_favorites
+                            .beboss-menu__item-text
+                                | Избранное
+                                span.beboss-menu__item-qt
+                                    | 80
+                        a(href="#").beboss-menu__item
+                            .beboss-menu__item-icon
+                                i.icon-24_black_settings
+                            .beboss-menu__item-text
+                                | Настройки
+                        a(href="#").beboss-menu__item
+                            .beboss-menu__item-icon
+                                i.icon-24_black_exit
+                            .beboss-menu__item-text
+                                | Выход
+
+                    .baron__track
+                        .baron__free
+                            .js-bh-ddb-scrollbar.baron__bar
+        .ntf-pop-up.ntf-pop-up_battery.hide
+            .ntf-item
+                .ntf-item__img
+                    .ntf-item__img-userpic
+                        img(src="/img/photo.png")
+                    img(src="/img/beboss-head-and-menu/ntf-bat-anim.gif")
+                .ntf-item__title
+                    | Счетчик действий
+                .ntf-item__text
+                    | Каждый зарегистрированный пользователь БИБОСС может совершать на сайте до&#032;
+                    span.bold
+                        | 5&#160;действий&#160;в&#160;день.&#032;
+                    br
+                    br
+                    | VIP-пользователи пользуются неограниченным количеством действий.&#032;
+                    a(href="#").glob-link
+                        | Подробнее
+                .ntf-item__close.icon-ar_black_cross
+        a(href="#").beboss-head__btn-entry.hide
+            .bk-item
+                .bk-item__icon
+                    i.icon-24_black_user.opacity02
+                .bk-item__txt.bk-item__txt_r
+                    | Войти
+.bmc.js-bmc.bmc_visible
+    .bmc__list
+        .bmc__btn-add
+            a(href="#").bmc-btn.js-bmc-btn
+                .bmc-btn__text
+                    | Добавить объявление
+                .bmc-btn__icon.bmc-btn__icon_a
+                    i.icon-24_white_obj
+        .bmc__btn-add
+            a(href="#").bmc-btn.js-bmc-btn
+                .bmc-btn__text
+                    | Задать вопрос сообществу предпринимателей
+                .bmc-btn__icon.bmc-btn__icon_q
+                    i.icon-24_white_qa
+        .bmc__btn-add
+            a(href="#").bmc-btn.js-bmc-btn
+                .bmc-btn__text
+                    | Написать статью
+                .bmc-btn__icon.bmc-btn__icon_p
+                    i.icon-24_white_blog
+
+    .bmc__btn-plus.js-bmc-btn-plus
+#city-selection.modal-city-selection.mfp-hide.bk-popup
+    .modal-city-selection__btn-close.js-modal-city-selection__btn-close.bk-popup__close
+        i.icon-24_black_close
+    .bk-popup__title
+        | Выберите город
+    .city-selection
+        .city-selection__form-group
+            .city-selection__form-item.js-cs-select
+                .bk-select-container
+                    .bk-select-container__arrow
+                    select.bk-select.js-bk-select
+                        option
+                            | Россия
+                        option
+                            | Украина
+                        option
+                            | Белоруссия
+                        option
+                            | Казахстан
+            .city-selection__form-item
+                input(type="text" placeholder="Поиск").bk-input-text.bk-input-text_full
+        .city-selection__list-container.js-bh-ddb-scroll-root.baron.baron__root.baron__clipper._macosx
+            .city-selection__list.js-bh-ddb-scroller.baron__scroller
+                a(href="#").city-selection__item
+                    | Вся Россия
+                a(href="#").city-selection__item
+                    | Москва
+                a(href="#").city-selection__item
+                    | Санкт-Петербург
+                .city-selection__separator
+                a(href="#").city-selection__item
+                    | Астрахань
+                a(href="#").city-selection__item
+                    | Барнаул
+                a(href="#").city-selection__item
+                    | Санкт-Петербург
+                a(href="#").city-selection__item
+                    | Великий Новгород
+                a(href="#").city-selection__item
+                    | Владивосток
+                a(href="#").city-selection__item
+                    | Грозный
+                a(href="#").city-selection__item
+                    | Казань
+                a(href="#").city-selection__item
+                    | Нижний Новгород
+                a(href="#").city-selection__item
+                    | Омск
+                a(href="#").city-selection__item
+                    | Саратов
+            .baron__track
+                .baron__free
+                    .js-bh-ddb-scrollbar.baron__bar

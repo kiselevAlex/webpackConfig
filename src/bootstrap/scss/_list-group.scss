@@ -1,0 +1,186 @@
+// Base class
+//
+// Easily usable on <ul>, <ol>, or <div>.
+
+.list-group {
+  display: flex;
+  flex-direction: column;
+
+  // No need to set list-style: none; since .list-group-item is block level
+  padding-left: 0; // reset padding because ul and ol
+  margin-bottom: 0;
+}
+
+// Interactive list items
+//
+// Use anchor or button elements instead of `li`s or `div`s to create interactive
+// list items. Includes an extra `.active` modifier class for selected items.
+
+.list-group-item-action {
+  width: 100%; // For `<button>`s (anchors become 100% by default though)
+//  color: $list-group-action-color;
+  text-align: inherit; // For `<button>`s (anchors inherit)
+  transition: $transition-base;
+
+  // Hover state
+  @include hover-focus {
+    color: $list-group-action-hover-color;
+    text-decoration: none;
+    background-color: $list-group-hover-bg;
+    .icon {
+      &-black-200 {
+        fill: $black-500;
+      }
+    }
+  }
+  //
+  //&:active {
+  //  //color: $list-group-action-active-color;
+  //  font-weight: $font-weight-bold;
+  //  background-color: $list-group-action-active-bg;
+  //}
+
+// Light color
+  &.list-group-item-light {
+    @include hover-focus {
+      color: $white;
+      text-decoration: none;
+      background-color: $list-group-action-hover-light-color;
+      .icon {
+        &-light {
+          fill: $white;
+        }
+      }
+    }
+  }
+}
+
+
+// Individual list items
+//
+// Use on `li`s or `div`s within the `.list-group` parent.
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: $list-group-item-padding-y $list-group-item-padding-x;
+  background-color: $list-group-bg;
+  border-radius: $border-radius-sm;
+  color: $black;
+
+  //&:first-child {
+  //  @include border-top-radius($list-group-border-radius);
+  //}
+  //
+  //&:last-child {
+  //  margin-bottom: 0;
+  //  @include border-bottom-radius($list-group-border-radius);
+  //}
+  //
+  //&.disabled,
+  //&:disabled {
+  //  color: $list-group-disabled-color;
+  //  pointer-events: none;
+  //  background-color: $list-group-disabled-bg;
+  //}
+
+  // Include both here for `<a>`s and `<button>`s
+  &.active {
+    font-weight: $font-weight-bold;
+    z-index: 2; // Place active items above their siblings for proper border styling
+    //color: $list-group-active-color;
+    //background-color: $list-group-active-bg;
+    //border-color: $list-group-active-border-color;
+
+    .icon {
+      &-black-200 {
+        fill: $black-500;
+      }
+    }
+  }
+}
+
+// Light color version
+
+.list-group-item-light {
+  background-color: transparent;
+  color: $icons-light-color;
+}
+
+// Text list items for position
+
+.list-group-item-text {
+  display: inline-block;
+  font-size: $font-size-base;
+}
+
+// Horizontal
+//
+// Change the layout of list group items from vertical (default) to horizontal.
+//
+//@each $breakpoint in map-keys($grid-breakpoints) {
+//  @include media-breakpoint-up($breakpoint) {
+//    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+//
+//    .list-group-horizontal#{$infix} {
+//      flex-direction: row;
+//
+//      .list-group-item {
+//        margin-right: -$list-group-border-width;
+//        margin-bottom: 0;
+//
+//        &:first-child {
+//          @include border-left-radius($list-group-border-radius);
+//          @include border-top-right-radius(0);
+//        }
+//
+//        &:last-child {
+//          margin-right: 0;
+//          @include border-right-radius($list-group-border-radius);
+//          @include border-bottom-left-radius(0);
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//
+//// Flush list items
+////
+//// Remove borders and border-radius to keep list group items edge-to-edge. Most
+//// useful within other components (e.g., cards).
+//
+//.list-group-flush {
+//  .list-group-item {
+//    border-right: 0;
+//    border-left: 0;
+//    @include border-radius(0);
+//
+//    &:last-child {
+//      margin-bottom: -$list-group-border-width;
+//    }
+//  }
+//
+//  &:first-child {
+//    .list-group-item:first-child {
+//      border-top: 0;
+//    }
+//  }
+//
+//  &:last-child {
+//    .list-group-item:last-child {
+//      margin-bottom: 0;
+//      border-bottom: 0;
+//    }
+//  }
+//}
+//
+//
+//// Contextual variants
+////
+//// Add modifier classes to change text and background color on individual items.
+//// Organizationally, this must come after the `:hover` states.
+//
+//@each $color, $value in $theme-colors {
+//  @include list-group-item-variant($color, theme-color-level($color, -9), theme-color-level($color, 6));
+//}

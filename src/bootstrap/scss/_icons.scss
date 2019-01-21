@@ -1,0 +1,49 @@
+// Base styles
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  transition: $transition-base;
+  flex-shrink: 0;
+
+  & + .list-group-item-text {
+    margin-left: $icons-padding;
+  }
+
+// Size
+
+  &-sm {
+    width: 20px;
+    height: 20px;
+  }
+  &-lg {
+    width: 32px;
+    height: 32px;
+  }
+
+// Color
+  &-white {
+
+  }
+  &-black {
+
+  }
+  &-black-200 {
+    fill: $black-200;
+  }
+  &-green {
+
+  }
+  &-blue {
+
+  }
+  &-red {
+
+  }
+
+// Light color version
+  &-light {
+    fill: #808080;
+  }
+}

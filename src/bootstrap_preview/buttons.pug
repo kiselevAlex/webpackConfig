@@ -1,0 +1,14 @@
+extends ../layouts/empty/empty
+
+block params
+  - var title = "Buttons";
+
+block content
+  .container
+    h1= title
+
+    +button('Large button')
+    +button('Large button')(class="btn-lg")
+    +button('Large button')(class="btn-lg btn-primary")
+    +button('Large button')(class="btn-sm")
+    +button('Large button')(class="btn-sm btn-primary")
